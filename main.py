@@ -66,7 +66,7 @@ if __name__ == '__main__':
     
     # Training configuration.
     parser.add_argument('--batch_size', type=int, default=16, help='mini-batch size')
-    parser.add_argument('--epochs', type=int, default=5, help='')
+    parser.add_argument('--epochs', type=int, default=200, help='')
     parser.add_argument('--ds_epochs', type=int, default=5, help='')
     parser.add_argument('--weight_decay', type=int, default=0.0001, help='weight decay')
     parser.add_argument('--g_lr', type=float, default=0.0001, help='learning rate for G')
@@ -96,9 +96,9 @@ if __name__ == '__main__':
 
     # Step size.
     parser.add_argument('--log_step', type=int, default=10)
-    parser.add_argument('--sample_step', type=int, default=1000)
+    parser.add_argument('--sample_step', type=int, default=100)
     parser.add_argument('--validation_step', type=int, default=100)
-    parser.add_argument('--model_save_step', type=int, default=10000)
+    parser.add_argument('--model_save_step', type=int, default=1000)
 
     config = parser.parse_args()
     print(config)

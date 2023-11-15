@@ -338,6 +338,7 @@ class Solver(object):
                     wandb.log({
                         "lambda_ds": self.config.lambda_ds,
                         "num_iters": num_iter,
+                        "epochs": ep,
                         })
           
     def validate(self):
