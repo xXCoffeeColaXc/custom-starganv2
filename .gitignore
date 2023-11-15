@@ -1,0 +1,5 @@
+/__pycache__
+/outputs/samples
+/outputs/logs
+/outputs/models
+/wandb
